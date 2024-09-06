@@ -30,9 +30,9 @@ class OnboardingView extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                AnswerOptionWidget(
+                const AnswerOptionWidget(
                   text: 'Hide Browsing History',
-                  icon: Image.asset(''),
+                  imagePath: '',
                 ),
               ],
             ),

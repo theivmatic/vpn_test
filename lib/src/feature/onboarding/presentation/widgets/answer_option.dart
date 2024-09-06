@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:vpn_test/core/constants/app_colors.dart';
 
 class AnswerOptionWidget extends StatelessWidget {
-  final Image icon;
+  final String imagePath;
   final String text;
 
   const AnswerOptionWidget({
     super.key,
-    required this.icon,
+    required this.imagePath,
     required this.text,
   });
 
@@ -21,6 +21,16 @@ class AnswerOptionWidget extends StatelessWidget {
         border: Border.all(
           color: AppColors.lightGrey,
         ),
+      ),
+      child: Row(
+        children: [
+          Image.asset(imagePath),
+          Text(text),
+          Checkbox(
+            value: false,
+            onChanged: (value) {},
+          ),
+        ],
       ),
     );
   }

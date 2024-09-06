@@ -6,4 +6,8 @@ abstract class TextStyles {
     fontSize: 27,
     fontWeight: FontWeight.w700,
   );
+  static TextStyle onboardingAnswerOption = GoogleFonts.jost(
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+  );
 }
