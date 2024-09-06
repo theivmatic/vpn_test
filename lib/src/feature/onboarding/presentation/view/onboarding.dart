@@ -21,13 +21,10 @@ class OnboardingView extends StatelessWidget {
               const SizedBox(height: 30),
               const TabsWidget(),
               const SizedBox(height: 40),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 33.5),
-                child: Text(
-                  'What’s your purpose\nof using VPN?',
-                  style: TextStyles.onboardingLabel,
-                  textAlign: TextAlign.center,
-                ),
+              Text(
+                'What’s your purpose\nof using VPN?',
+                style: TextStyles.onboardingLabel,
+                textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
               const AnswerOptionWidget(
