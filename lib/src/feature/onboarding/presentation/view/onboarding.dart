@@ -3,6 +3,7 @@ import 'package:vpn_test/core/constants/app_colors.dart';
 import 'package:vpn_test/core/constants/assets_path.dart';
 import 'package:vpn_test/core/constants/text_styles.dart';
 import 'package:vpn_test/src/feature/onboarding/presentation/widgets/answer_option.dart';
+import 'package:vpn_test/src/feature/onboarding/presentation/widgets/bottom_button.dart';
 import 'package:vpn_test/src/feature/onboarding/presentation/widgets/tabs.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -45,6 +46,11 @@ class OnboardingView extends StatelessWidget {
                 text: 'Mark IP Address',
                 imagePath: AssetsPath.markIpAddress,
               ),
+              const Spacer(),
+              BottomButton(
+                onPressed: () {},
+              ),
+              const SizedBox(height: 24),
             ],
           ),
         ),
