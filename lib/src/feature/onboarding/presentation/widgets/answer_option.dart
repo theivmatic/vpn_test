@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vpn_test/core/constants/app_colors.dart';
+import 'package:vpn_test/core/constants/text_styles.dart';
 
 class AnswerOptionWidget extends StatelessWidget {
   final String imagePath;
@@ -25,8 +26,20 @@ class AnswerOptionWidget extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(imagePath),
-          Text(text),
+          const SizedBox(width: 8),
+          Text(
+            text,
+            style: TextStyles.onboardingAnswerOption,
+          ),
+          const Spacer(),
           Checkbox(
+            side: const BorderSide(
+              color: AppColors.lightGrey,
+            ),
+            shape: const CircleBorder(
+                // side: BorderSide(color: AppColors.lightGrey),
+                ),
+            // overlayColor: const WidgetStatePropertyAll(AppColors.lightGrey),
             value: false,
             onChanged: (value) {},
           ),

@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:vpn_test/src/feature/onboarding/presentation/view/onboarding.dart';
 
 void main() {
-  runApp(const App());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    const App(),
+  );
 }
 
 class App extends StatelessWidget {
