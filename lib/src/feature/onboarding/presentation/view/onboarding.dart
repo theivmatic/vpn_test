@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vpn_test/core/constants/app_colors.dart';
 import 'package:vpn_test/src/feature/onboarding/presentation/widgets/tab.dart';
 
 class OnboardingView extends StatelessWidget {
@@ -9,6 +10,7 @@ class OnboardingView extends StatelessWidget {
     return const DefaultTabController(
       length: 3,
       child: Scaffold(
+        backgroundColor: AppColors.white,
         body: SafeArea(
           child: Column(
             children: [
@@ -18,12 +20,18 @@ class OnboardingView extends StatelessWidget {
                 children: [
                   TabWidget(
                     backgroundColor: Colors.black,
+                    gradient: LinearGradient(
+                      colors: [
+                        AppColors.blue,
+                        AppColors.lightBlue,
+                      ],
+                    ),
                   ),
                   TabWidget(
-                    backgroundColor: Colors.black,
+                    backgroundColor: AppColors.lightGrey,
                   ),
                   TabWidget(
-                    backgroundColor: Colors.black,
+                    backgroundColor: AppColors.lightGrey,
                   ),
                 ],
               ),
