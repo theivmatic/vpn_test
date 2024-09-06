@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
 class TabWidget extends StatelessWidget {
-  const TabWidget({super.key});
+  final Color backgroundColor;
+
+  const TabWidget({
+    super.key,
+    required this.backgroundColor,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      width: 111,
+      height: 4,
+      decoration: BoxDecoration(
+        color: backgroundColor,
+        borderRadius: BorderRadius.circular(7),
+      ),
     );
   }
 }
